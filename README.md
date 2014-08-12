@@ -13,13 +13,13 @@ Prerequisites: wget, node and sqlite3. For OS X:
 Clone this repo, `cd` into it and do:
 
     npm install
+    chmod 777 build.sh
     ./build.sh
 
 The script will:
 
-- Set up the new SQLite database for Dash's.
 - Fetch the newest released React documentation from http://facebook.github.io/react/.
-- Parse the doc site into sqlite. The list of files are hardcoded. Please check `src/index.js` for more detail.
+- Parse the doc site into a new SQLite database for Dash. The list of files are hardcoded. Please check `src/index.js` for more detail.
 - Bundle up the result in a React.docset.
 
 Test the output by clicking on React.docset (importing it into Dash). Then, like it said on [Dash User Contributions](https://github.com/Kapeli/Dash-User-Contributions#contribute-a-new-docset):

@@ -6,7 +6,7 @@ var Sequelize = require('sequelize');
 // db ops
 var sequelize = new Sequelize('database', null, null, {
   dialect: 'sqlite',
-  storage: '../Contents/Resources/docSet.dsidx',
+  storage: __dirname + '/../Contents/Resources/docSet.dsidx',
 });
 
 var searchIndex = sequelize.define(

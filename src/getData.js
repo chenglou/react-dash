@@ -7,7 +7,8 @@ var indexedFiles = require('./indexedFiles');
 // Contents/Resources/Documents/React
 function getData() {
   var res = indexedFiles.map(function(a, i) {
-    var path = '../Contents/Resources/Documents/react/docs/' + a.name + '.html';
+    var path = __dirname + '/../Contents/Resources/Documents/react/docs/' +
+      a.name + '.html';
     var src = fs.readFileSync(path, 'utf-8');
     var $ = cheerio.load(src);
 
