@@ -1,12 +1,16 @@
 {
-  "name": "table-generator",
+  "name": "react-dash",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React documentation source for [Dash](http://kapeli.com/dash)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenglou/react-dash"
+  },
+  "main": "src/index.js",
   "dependencies": {
+    "cheerio": "^0.17.0",
     "lodash.flatten": "^2.4.1",
     "sequelize": "^1.7.9",
-    "slug": "^0.5.0",
     "sqlite3": "^2.2.7"
   },
   "devDependencies": {},
