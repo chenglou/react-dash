@@ -1,3 +1,6 @@
+# clean up previous remains, if any
+rm -rf Contents/Resources
+rm -rf React.docset
 mkdir -p Contents/Resources/Documents
 # create a fresh sqlite db
 cd Contents/Resources
@@ -10,6 +13,8 @@ wget -m -p -E -k -np http://facebook.github.io/react/
 mv facebook.github.io/react ./
 rm -rf facebook.github.io
 cd ../../../
+# change the documentation markup layout a bit to fit dash's small window
+node src/modifyDocsHTML.js
 # read the previously fetched doc site and parse it into sqlite
 node src/index.js
 # bundle up!
