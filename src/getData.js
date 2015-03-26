@@ -6,7 +6,7 @@ var indexedFiles = require('./indexedFiles');
 // this assumes build1.sh has been run, and the react docs fetched into
 // Contents/Resources/Documents/React
 function getData() {
-  var res = indexedFiles.map(function(a, i) {
+  var res = indexedFiles.map(function(a) {
     var path = __dirname + '/../Contents/Resources/Documents/react/docs/' +
       a.name + '.html';
     var src = fs.readFileSync(path, 'utf-8');

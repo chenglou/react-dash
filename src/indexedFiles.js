@@ -17,6 +17,7 @@ var indexedFiles = [
   },
   {name: 'test-utils', type: 'Test'},
   {name: 'clone-with-props', type: 'Extension'},
+  {name: 'create-fragment', type: 'Extension'},
   {
     name: 'update',
     type: 'Extension',
@@ -42,6 +43,15 @@ var indexedFiles = [
   {name: 'component-specs', type: 'Interface'},
   {name: 'tags-and-attributes', type: 'Tag'},
   {name: 'events', type: 'Event'},
+  {
+    name: 'glossary',
+    type: 'Interface',
+    extraHeaders: [
+      ['Elements', 'react-elements'],
+      ['Nodes', 'react-nodes'],
+      ['Components', 'react-components'],
+    ]
+  },
 ];
 
 module.exports = indexedFiles;
