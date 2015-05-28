@@ -23,7 +23,7 @@ var searchIndex = sequelize.define(
   }
 );
 
-searchIndex.sync().success(function() {
+searchIndex.sync().then(function() {
   getData().forEach(function(header) {
     var si = searchIndex.build({
       name: header.name,
