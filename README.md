@@ -1,6 +1,7 @@
 # [React](http://facebook.github.io/react/) Dash Documentation
 
-**React docset is now officially maintained by Dash and is avaiable _since Dash 3.1.0_**. There's no need for this library anymore. Thus, it's now deprecated!
+# Warning!
+React docset is now officially maintained by Dash and is avaiable _since Dash 3.1.0_. There's no need for this library anymore. Thus, it's now deprecated!
 
 Below is the old instruction.
 
